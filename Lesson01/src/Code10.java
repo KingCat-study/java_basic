@@ -34,7 +34,7 @@ public class Code10 {
 //			}
 			
 			if(isPrime) {
-//				System.out.println(n+"은 소수 ");
+				System.out.println(n+"은 소수 ");
 				count++;
 			} 
 		}
