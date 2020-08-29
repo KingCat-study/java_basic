@@ -4,6 +4,7 @@ import java.util.Scanner;
 은 다음과 같다. 먼저 첫 줄에는 첫 번째 행렬의 크기 p와 q가 주어지고, 이어지는 p줄에는 각 줄마다
 q개의 정수가 주어진다. 다음으로 두번째 행렬의 크기 q와 r이 주어지고, 마찬가지로 이어지는 q줄에
 는 각 줄마다 r개의 정수가 주어진다. 두 행렬의 곱을 구하여 출력한다*/
+//공식 Cij = 시그마k=1, Aik * Bkj
 public class TaskSet01_11 {
 
 	public static void main(String[] args) {
