@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 //사용자로부터 하나의 양의 정수 n을 입력받는다. 그런 다음 다음과 같이 n줄을 출력하는 프로그램을 작성하라.

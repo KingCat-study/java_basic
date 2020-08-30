@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 /*사용자로부터 n개의 정수를 입력받아 배열에 저장한 후 짝수 인덱스에 저장된 수는 그대로 두고 홀수

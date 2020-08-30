@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 //사용자로 부터 n개의 정수를 받아서 그 중 모든 짝수를 더한 값에서 모든 홀수를 뺀 값을 계산해 출력하

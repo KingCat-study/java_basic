@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 /*n개의 정수를 입력받아 순서대로 배열에 저장한다. 그 런 다음 모든 정수들을 한 칸씩 오른쪽으로 shift하라.

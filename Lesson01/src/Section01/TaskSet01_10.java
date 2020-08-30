@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 /*사용자로부터 하나의 양의 정수 n을 입력받고 이어서 n개의 정수가 입력된다. 그런 다음 다시 하나의

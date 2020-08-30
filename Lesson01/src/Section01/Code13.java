@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 //n개의 음이 아닌 한 자리 정수를 입력받아 배열에 저장한다. 이들

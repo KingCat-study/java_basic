@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 /*사용자로부터 n개의 정수를 입력받아 크기순으로 정렬한 후 중복된 수를 제거하고 출력하는 프로그램

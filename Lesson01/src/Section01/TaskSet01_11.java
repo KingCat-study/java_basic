@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 /*입력으로 두 행렬(p*q 행렬과 q*r행렬)을 받아서 두 행렬을 곱하는 프로그램을 작성하라. 입력의 형식

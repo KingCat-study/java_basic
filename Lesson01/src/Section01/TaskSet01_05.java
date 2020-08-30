@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 //사용자로 부터 n개의 정수를 받아서 그 중 최대값에서 최소값을 뺀 값을 계산해 출력하는 프로그램을 작성하라. 

@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 /*사용자로부터 하나의 양의 정수 n을 입력받는다. n보다 크거나 같으면서 가장 작은 2의 거듭제곱수를

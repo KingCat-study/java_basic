@@ -1,3 +1,4 @@
+package Section01;
 import java.util.Scanner;
 
 //사용자로부터 먼저 정수의 개수 n을 입력받는다. 이어서 n개의 정
