@@ -2,7 +2,7 @@ package Section02;
 
 import java.util.Scanner;
 
-//입력으로 정수 a와  음이 아닌 정수 b를 받아 a의 b승을 계산한다.
+//입력으로 정수 a와  음이 아닌 정수 b를 받아 a의 b승을 계산한다. 
 public class Code16 {
 	
 	public static void main(String[] args) {
