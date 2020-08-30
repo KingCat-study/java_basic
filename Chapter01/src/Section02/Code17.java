@@ -22,7 +22,7 @@ public class Code17 {
 		} else {
 			for (int i = 2; i*i < a; i++) {
 				if(a % i == 0) {
-					result = false;
+					return false;
 				}
 			}
 		}
