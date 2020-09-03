@@ -1,0 +1,9 @@
+and
+batman
+mad
+man
+true
+ironman
+false
+car
+hospital
