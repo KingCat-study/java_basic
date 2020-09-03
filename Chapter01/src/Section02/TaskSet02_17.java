@@ -76,13 +76,11 @@ public class TaskSet02_17 {
 		int forMax = (yStartIdx+yEndIdx) > data.length-1 ? data.length-1 : yStartIdx+yEndIdx;
 		
 		for (int i = yStartIdx; i <= forMax; i++) {
-			boolean isOne = true;
 			for (int j = xStartIdx; j <= xEndIdx; j++) {
 				if(data[i][j] != 1) {
-					isOne = false;
+					return false;
 				}
 			}
-			result = isOne;
 		}
 		
 		return result;
