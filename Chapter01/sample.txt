@@ -1,0 +1,1055 @@
+The Linux Kernel documentation
+This is the top level of the kernel’s documentation tree. Kernel documentation, like the kernel itself, is very much a work in progress; that is especially true as we work to integrate our many scattered documents into a coherent whole. Please note that improvements to the documentation are welcome; join the linux-doc list at vger.kernel.org if you want to help out.
+
+Licensing documentation
+The following describes the license of the Linux kernel source code (GPLv2), how to properly mark the license of individual files in the source tree, as well as links to the full license text.
+
+Linux kernel licensing rules
+User-oriented documentation
+The following manuals are written for users of the kernel — those who are trying to get it to work optimally on a given system.
+
+The Linux kernel user’s and administrator’s guide
+Linux kernel release 5.x <http://kernel.org/>
+The kernel’s command-line parameters
+Linux allocated devices (4.x+ version)
+Documentation for /proc/sys
+Hardware vulnerabilities
+Reporting bugs
+Security bugs
+Bug hunting
+Bisecting a bug
+Tainted kernels
+Ramoops oops/panic logger
+Dynamic debug
+Explaining the “No working init found.” boot hang message
+Documentation for Kdump - The kexec-based Crash Dumping Solution
+Performance monitor support
+pstore block oops/panic logger
+Rules on how to access information in sysfs
+ACPI Support
+ATA over Ethernet (AoE)
+Auxiliary Display Support
+A block layer cache (bcache)
+The Android binderfs Filesystem
+Kernel Support for miscellaneous Binary Formats (binfmt_misc)
+The Linux RapidIO Subsystem
+Boot Configuration
+Linux Braille Console
+btmrvl driver
+Control Groups version 1
+Control Group v2
+CIFS
+Clearing WARN_ONCE
+CPU load
+How CPU topology info is exported via sysfs
+Dell Remote BIOS Update driver (dell_rbu)
+Device Mapper
+EDID
+The EFI Boot Stub
+ext4 General Information
+NFS
+gpio
+Notes on the change from 16-bit UIDs to 32-bit UIDs
+Linux support for random number generator in i8xx chipsets
+Using the initial RAM disk (initrd)
+I/O statistics fields
+Java(tm) Binary Kernel Support for Linux v1.03
+IBM’s Journaled File System (JFS) for Linux
+Reducing OS jitter due to per-cpu kthreads
+Laptop Drivers
+Parallel port LCD/Keypad Panel support
+LDM - Logical Disk Manager (Dynamic Disks)
+Softlockup detector and hardlockup detector (aka nmi_watchdog)
+Linux Security Module Usage
+RAID arrays
+Media subsystem admin and user guide
+Memory Management
+Kernel module signing facility
+Mono(tm) Binary Kernel Support for Linux
+Namespaces
+Numa policy hit/miss statistics
+Parport
+Perf events and tool security
+Power Management
+Linux Plug and Play Documentation
+RapidIO Subsystem Guide
+Reliability, Availability and Serviceability
+Real Time Clock (RTC) Drivers for Linux
+Linux Serial Console
+Video Mode Selection Support 2.13
+Linux Magic System Request Key Hacks
+USB4 and Thunderbolt
+Using UFS
+Unicode support
+Software cursor for VGA
+Video Output Switcher Control
+WiMAX subsystem
+The SGI XFS Filesystem
+Kernel Build System
+Kconfig Language
+Kconfig macro language
+Kbuild
+Kconfig make config
+Linux Kernel Makefiles
+Building External Modules
+Exporting kernel headers for use by userspace
+Recursion issues
+Reproducible builds
+GCC plugin infrastructure
+Building Linux with Clang/LLVM
+Firmware-related documentation
+The following holds information on the kernel’s expectations regarding the platform firmwares.
+
+The Linux kernel firmware guide
+ACPI Support
+Open Firmware and Device Tree
+Linux and the Device Tree
+Writing DeviceTree Bindings in json-schema
+DT Changesets
+Device Tree Dynamic Resolver Notes
+Open Firmware Device Tree Unittest
+Device Tree Overlay Notes
+Device Tree
+Booting the Linux/ppc kernel without Open Firmware
+Application-developer documentation
+The user-space API manual gathers together documents describing aspects of the kernel interface as seen by application developers.
+
+The Linux kernel user-space API guide
+No New Privileges Flag
+Seccomp BPF (SECure COMPuting with filters)
+unshare system call
+Speculation Control
+OpenCAPI (Open Coherent Accelerator Processor Interface)
+IOCTLs
+Linux Media Infrastructure userspace API
+Introduction to kernel development
+These manuals contain overall information about how to develop the kernel. The kernel community is quite large, with thousands of developers contributing over the course of a year. As with any large community, knowing how things are done will make the process of getting your changes merged much easier.
+
+Working with the kernel development community
+Linux kernel licensing rules
+HOWTO do Linux kernel development
+Contributor Covenant Code of Conduct
+Linux Kernel Contributor Covenant Code of Conduct Interpretation
+A guide to the Kernel Development Process
+Submitting patches: the essential guide to getting your code into the kernel
+Programming Language
+Linux kernel coding style
+Kernel Maintainer PGP guide
+Email clients info for Linux
+Linux Kernel Enforcement Statement
+Kernel Driver Statement
+Minimal requirements to compile the Kernel
+Submitting Drivers For The Linux Kernel
+The Linux Kernel Driver Interface
+Linux kernel management style
+Everything you ever wanted to know about Linux -stable releases
+Linux Kernel patch submission checklist
+Index of Documentation for People Interested in Writing and/or Understanding the Linux Kernel
+Deprecated Interfaces, Language Features, Attributes, and Conventions
+Embargoed hardware issues
+List of maintainers and how to submit kernel changes
+Applying Patches To The Linux Kernel
+Adding a New System Call
+Linux magic numbers
+Why the “volatile” type class should not be used
+(How to avoid) Botching up ioctls
+clang-format
+arch/riscv maintenance guidelines for developers
+Unaligned Memory Accesses
+Development tools for the kernel
+Coccinelle
+Sparse
+kcov: code coverage for fuzzing
+Using gcov with the Linux kernel
+The Kernel Address Sanitizer (KASAN)
+The Undefined Behavior Sanitizer - UBSAN
+Kernel Memory Leak Detector
+The Kernel Concurrency Sanitizer (KCSAN)
+Debugging kernel and modules via gdb
+Using kgdb, kdb and the kernel debugger internals
+Linux Kernel Selftests
+KUnit - Unit Testing for the Linux Kernel
+How to write kernel documentation
+Introduction
+Sphinx Install
+Sphinx Build
+Writing Documentation
+Figures & Images
+Writing kernel-doc comments
+Including kernel-doc comments
+Including uAPI header files
+How to help improve kernel documentation
+Documentation subsystem maintainer entry profile
+Kernel Hacking Guides
+Unreliable Guide To Hacking The Linux Kernel
+Unreliable Guide To Locking
+Linux Tracing Technologies
+Function Tracer Design
+Notes on Analysing Behaviour Using Events and Tracepoints
+ftrace - Function Tracer
+Using ftrace to hook to functions
+Kernel Probes (Kprobes)
+Kprobe-based Event Tracing
+Uprobe-tracer: Uprobe-based Event Tracing
+Using the Linux Kernel Tracepoints
+Event Tracing
+Subsystem Trace Points: kmem
+Subsystem Trace Points: power
+NMI Trace Events
+MSR Trace Events
+In-kernel memory-mapped I/O tracing
+Event Histograms
+Histogram Design Notes
+Boot-time tracing
+Hardware Latency Detector
+Intel(R) Trace Hub (TH)
+Lockless Ring Buffer Design
+System Trace Module
+MIPI SyS-T over STP
+CoreSight - ARM Hardware Trace
+Kernel Maintainer Handbook
+Configure Git
+Rebasing and merging
+Creating Pull Requests
+Maintainer Entry Profile
+fault-injection
+Fault injection capabilities infrastructure
+Notifier error injection
+NVMe Fault Injection
+Provoke crashes
+Kernel Livepatching
+Livepatch
+(Un)patching Callbacks
+Atomic Replace & Cumulative Patches
+Livepatch module Elf format
+Shadow Variables
+System State Changes
+Kernel API documentation
+These books get into the details of how specific kernel subsystems work from the point of view of a kernel developer. Much of the information here is taken directly from the kernel source, with supplemental material added as needed (or at least as we managed to add it — probably not all that is needed).
+
+The Linux driver implementer’s API guide
+Driver Model
+Driver Basics
+Device drivers infrastructure
+ioctl based interfaces
+Early Userspace
+CPU and Device Power Management
+The Common Clk Framework
+Bus-Independent Device Accesses
+Device connections
+Buffer Sharing and Synchronization
+Device links
+Component Helper for Aggregate Drivers
+Message-based devices
+InfiniBand and Remote DMA (RDMA) Interfaces
+Sound Devices
+Frame Buffer Library
+Voltage and current regulator API
+Industrial I/O
+Input Subsystem
+Linux USB API
+Firewire (IEEE 1394) driver Interface Guide
+The Linux PCI driver implementer’s API guide
+Serial Peripheral Interface (SPI)
+I2C and SMBus Subsystem
+IPMB Driver for a Satellite MC
+The Linux IPMI Driver
+I3C subsystem
+Generic System Interconnect Subsystem
+Device Frequency Scaling
+High Speed Synchronous Serial Interface (HSI)
+Error Detection And Correction (EDAC) Devices
+SCSI Interfaces Guide
+libATA Developer’s Guide
+target and iSCSI Interfaces Guide
+The Common Mailbox Framework
+MTD NAND Driver Programming Interface
+Parallel Port Devices
+16x50 UART Driver
+Pulse-Width Modulation (PWM)
+Intel(R) Management Engine Interface (Intel(R) MEI)
+Memory Technology Device (MTD)
+MMC/SD/SDIO card support
+Non-Volatile Memory Device (NVDIMM)
+W1: Dallas’ 1-wire bus
+The Linux RapidIO Subsystem
+Writing s390 channel device drivers
+VME Device Drivers
+Linux 802.11 Driver Developer’s Guide
+The Userspace I/O HOWTO
+Linux Firmware API
+PINCTRL (PIN CONTROL) subsystem
+General Purpose Input/Output (GPIO)
+RAID
+Media subsystem kernel internal API
+Miscellaneous Devices
+Near Field Communication
+DMAEngine documentation
+Linux kernel SLIMbus support
+SoundWire Documentation
+Thermal
+FPGA Subsystem
+ACPI Support
+Kernel driver lp855x
+Kernel Connector
+Console Drivers
+Dell Systems Management Base Driver
+EISA bus support
+IPMB Driver for a Satellite MC
+ISA Drivers
+ISA Plug & Play support by Jaroslav Kysela <perex@suse.cz>
+The io_mapping functions
+Ordering I/O writes to memory-mapped addresses
+Generic Counter Interface
+pblk: Physical Block Device Target
+Memory Controller drivers
+MEN Chameleon Bus
+NTB Drivers
+NVMEM Subsystem
+PARPORT interface documentation
+PPS - Pulse Per Second
+PTP hardware clock infrastructure for Linux
+Generic PHY Framework
+Intel MID PTI
+Pulse Width Modulation (PWM) interface
+PLDM Firmware Flash Update Library
+Overview of the pldmfw library
+rfkill - RF kill switch support
+Support for Serial devices
+SM501 Driver
+Linux Switchtec Support
+Sync File API Guide
+VFIO Mediated devices
+VFIO - “Virtual Function I/O”
+Xilinx FPGA
+Xillybus driver for generic FPGA interface
+Writing Device Drivers for Zorro Devices
+Core API Documentation
+Core utilities
+Data structures and low-level utilities
+Concurrency primitives
+Low-level hardware management
+Memory management
+Interfaces for kernel debugging
+Everything else
+locking
+Lock types and their rules
+Runtime locking correctness validator
+Lock Statistics
+Kernel Lock Torture Test Operation
+Generic Mutex Subsystem
+RT-mutex implementation design
+RT-mutex subsystem with PI support
+Sequence counters and sequential locks
+Locking lessons
+Wound/Wait Deadlock-Proof Mutex Design
+Proper Locking Under a Preemptible Kernel: Keeping Kernel Code Preempt-Safe
+Lightweight PI-futexes
+Futex Requeue PI
+Hardware Spinlock Framework
+Percpu rw semaphores
+A description of what robust futexes are
+The robust futex ABI
+Accounting
+Control Groupstats
+Delay accounting
+PSI - Pressure Stall Information
+Per-task statistics interface
+The struct taskstats
+Block
+BFQ (Budget Fair Queueing)
+Notes on the Generic Block Layer Rewrite in Linux 2.5
+Immutable biovecs and biovec iterators
+Multi-Queue Block IO Queueing Mechanism (blk-mq)
+Generic Block Device Capability
+Embedded device command line partition parsing
+Data Integrity
+Deadline IO scheduler tunables
+Inline Encryption
+Block io priorities
+Kyber I/O scheduler tunables
+Null block device driver
+Block layer support for Persistent Reservations
+Queue sysfs files
+struct request documentation
+Block layer statistics in /sys/block/<dev>/stat
+Switching Scheduler
+Explicit volatile write back cache control
+cdrom
+A Linux CD-ROM standard
+IDE-CD driver documentation
+Packet writing
+Linux CPUFreq - CPU frequency and voltage scaling code in the Linux(TM) kernel
+General description of the CPUFreq core and CPUFreq notifiers
+How to Implement a new CPUFreq Processor Driver
+General Description of sysfs CPUFreq Stats
+Mailing List
+Links
+Integrated Drive Electronics (IDE)
+Information regarding the Enhanced IDE drive
+IDE ATAPI streaming tape driver
+IDE warm-plug HOWTO
+Changelog for ide cd
+Changelog for ide floppy
+Changelog for ide tape
+Frame Buffer
+The Frame Buffer Device API
+arkfb - fbdev driver for ARK Logic chips
+What is aty128fb?
+Framebuffer driver for Cirrus Logic chipsets
+Understanding fbdev’s cmap
+Deferred IO
+What is efifb?
+Driver for EP93xx LCD controller
+Video Attribute Flags
+Platform callbacks
+Setting the video mode
+Screenpage bug
+The Framebuffer Console
+The Frame Buffer Device
+What is gxfb?
+Intel 810/815 Framebuffer driver
+Intel 830M/845G/852GM/855GM/865G/915G/945G Framebuffer driver
+Frame Buffer device internals
+What is lxfb?
+What is matroxfb?
+Metronomefb
+modedb default video mode support
+What is pvr2fb?
+Driver for PXA25x LCD controller
+s3fb - fbdev driver for S3 Trio/Virge chips
+What is sa1100fb?
+SH7760/SH7763 integrated LCDC Framebuffer driver
+What is sisfb?
+sm501fb
+What is sm712fb?
+sstfb
+What is tgafb?
+Tridentfb
+What is udlfb?
+uvesafb - A Generic Driver for VBE2+ compliant video cards
+What is vesafb?
+VIA Integration Graphic Chip Console Framebuffer Driver
+vt8623fb - fbdev driver for graphics core in VIA VT8623 chipset
+fpga
+FPGA Device Feature List (DFL) Framework Overview
+Human Interface Devices (HID)
+Care and feeding of your Human Interface Devices
+HIDRAW - Raw Access to USB and Bluetooth Human Interface Devices
+HID Sensors Framework
+HID I/O Transport Drivers
+UHID - User-space I/O driver support for HID subsystem
+ALPS HID Touchpad Protocol
+Intel Integrated Sensor Hub (ISH)
+I2C/SMBus Subsystem
+Introduction
+Writing device drivers
+Debugging
+Slave I2C
+Advanced topics
+Legacy documentation
+Industrial I/O
+Industrial IIO configfs support
+Cirrus Logic EP93xx ADC driver
+ISDN
+Kernel CAPI Interface to Hardware Drivers
+mISDN Driver
+Credits
+InfiniBand
+InfiniBand Midlayer Locking
+IP over InfiniBand
+Intel Omni-Path (OPA) Virtual Network Interface Controller (VNIC)
+Sysfs files
+Tag matching logic
+Userspace MAD access
+Userspace verbs access
+LEDs
+LED handling under Linux
+Flash LED handling under Linux
+Multicolor LED handling under Linux
+One-shot LED Trigger
+LED Transient Trigger
+USB port LED trigger
+Userspace LEDs
+Leds BlinkM driver
+Kernel driver for lm3556
+Kernel driver lp3944
+Kernel driver for lp5521
+Kernel driver for lp5523
+Kernel driver for lp5562
+LP5521/LP5523/LP55231/LP5562/LP8501 Common Driver
+Kernel driver for Mellanox systems LEDs
+NetLabel
+NetLabel Introduction
+NetLabel CIPSO/IPv4 Protocol Engine
+NetLabel Linux Security Module Interface
+Draft IETF CIPSO IP Security
+Linux Networking Documentation
+netdev FAQ
+AF_XDP
+Bare UDP Tunnelling Module Documentation
+batman-adv
+SocketCAN - Controller Area Network
+The UCAN Protocol
+Hardware Device Drivers
+Distributed Switch Architecture
+Linux Devlink Documentation
+CAIF
+Netlink interface for ethtool
+IEEE 802.15.4 Developer’s Guide
+J1939 Documentation
+Linux Networking and Network Devices APIs
+MSG_ZEROCOPY
+FAILOVER
+Net DIM - Generic Network Dynamic Interrupt Moderation
+NET_FAILOVER
+Page Pool API
+PHY Abstraction Layer
+phylink
+IP-Aliasing
+Ethernet Bridging
+SNMP counter
+Checksum Offloads
+Segmentation Offloads
+Scaling in the Linux Networking Stack
+Kernel TLS
+Kernel TLS offload
+Linux NFC subsystem
+Netdev private dataroom for 6lowpan interfaces
+6pack Protocol
+ARCnet Hardware
+ARCnet
+ATM
+AX.25
+Linux Ethernet Bonding Driver HOWTO
+cdc_mbim - Driver for CDC MBIM Mobile Broadband modems
+DCCP protocol
+DCTCP (DataCenter TCP)
+Linux DECnet Networking Layer Information
+DNS Resolver Module
+Softnet Driver Issues
+EQL Driver: Serial IP Load Balancing HOWTO
+LC-trie implementation notes
+Linux Socket Filtering aka Berkeley Packet Filter (BPF)
+Frame Relay (FR)
+Generic HDLC layer
+Generic Netlink
+Generic networking statistics for netlink users
+The Linux kernel GTP tunneling module
+Identifier Locator Addressing (ILA)
+AppleTalk-IP Decapsulation and AppleTalk-IP Encapsulation
+IP dynamic address hack-port v0.03
+IPsec
+IP Sysctl
+IPv6
+IPVLAN Driver HOWTO
+IPvs-sysctl
+Kernel Connection Multiplexor
+L2TP
+The Linux LAPB Module Interface
+How to use packet injection with mac80211
+MPLS Sysfs variables
+HOWTO for multiqueue network device support
+Netconsole
+Netdev features mess and how to get out from it alive
+Network Devices, the Kernel, and You!
+Netfilter Sysfs variables
+NETIF Msg Level
+Netfilter Conntrack Sysfs variables
+Netfilter’s flowtable infrastructure
+Open vSwitch datapath developer documentation
+Operational States
+Packet MMAP
+Linux Phonet protocol family
+HOWTO for the linux packet generator
+PLIP: The Parallel Line Internet Protocol Device
+PPP Generic Driver and Channel Interface
+The proc/net/tcp and proc/net/tcp6 variables
+How to use radiotap headers
+Overview
+RDS Architecture
+Socket Interface
+RDMA for RDS
+Congestion Notifications
+RDS Protocol
+RDS Transport Layer
+RDS Kernel Structures
+Connection management
+The send path
+The recv path
+Multipath RDS (mprds)
+Linux wireless regulatory documentation
+RxRPC Network Protocol
+SOCKET OPTIONS
+SECURITY
+EXAMPLE CLIENT USAGE
+Linux Kernel SCTP
+LSM/SeLinux secid
+Seg6 Sysfs variables
+Stream Parser (strparser)
+Ethernet switch device driver model (switchdev)
+TC Actions - Environmental Rules
+Thin-streams and TCP
+Team
+Timestamping
+Transparent proxy support
+Universal TUN/TAP device driver
+The UDP-Lite protocol (RFC 3828)
+Virtual Routing and Forwarding (VRF)
+Virtual eXtensible Local Area Networking documentation
+Packet Layer to Device Driver
+Device Driver to Packet Layer
+Linux X.25 Project
+XFRM device - offloading the IPsec computations
+XFRM proc - /proc/net/xfrm_* files
+XFRM
+XFRM Syscall
+pcmcia
+PCMCIA Driver
+Device table
+Locking
+Driver changes
+Power Management
+APM or ACPI?
+Debugging hibernation and suspend
+Charger Manager
+Testing suspend and resume support in device drivers
+Energy Model of devices
+Freezing of tasks
+Operating Performance Points (OPP) Library
+PCI Power Management
+PM Quality Of Service Interface
+Linux power supply class
+Runtime Power Management Framework for I/O Devices
+How to get s2ram working
+Interaction of Suspend code (S3) with the CPU hotplug infrastructure
+System Suspend and Device Interrupts
+Using swap files with software suspend (swsusp)
+How to use dm-crypt and swsusp together
+Swap suspend
+Video issues with S3 resume
+swsusp/S3 tricks
+Documentation for userland software suspend interface
+Power Capping Framework
+Regulator Consumer Driver Interface
+Regulator API design notes
+Regulator Machine Driver Interface
+Linux voltage and current regulator framework
+Regulator Driver Interface
+TCM Virtual Device
+TCM Userspace Design
+The TCM v4 fabric module script generator
+TCM mod builder script
+Target export device script
+timers
+High resolution timers and dynamic ticks design notes
+High Precision Event Timer Driver for Linux
+hrtimers - subsystem for high-resolution kernel timers
+NO_HZ: Reducing Scheduling-Clock Ticks
+Clock sources, Clock events, sched_clock() and delay timers
+delays - Information on the various kernel delay / sleep mechanisms
+Serial Peripheral Interface (SPI)
+Overview of Linux kernel SPI support
+SPI userspace API
+spi_butterfly - parport-to-butterfly adapter driver
+PXA2xx SPI on SSP driver HOWTO
+spi_lm70llp : LM70-LLP parport-to-SPI adapter
+Kernel driver spi-sc18is602
+1-Wire Subsystem
+Introduction to the 1-wire (w1) subsystem
+Userspace communication protocol over connector
+1-wire Master Drivers
+1-wire Slave Drivers
+Linux Watchdog Support
+HPE iLO NMI Watchdog Driver
+Mellanox watchdog drivers
+Berkshire Products PC Watchdog Card
+The Linux Watchdog driver API
+The Linux WatchDog Timer Driver Core kernel API
+WatchDog Module Parameters
+The Linux WatchDog Timer Power Management Guide
+WDT Watchdog Timer Interfaces For The Linux Operating System
+Converting old watchdog drivers to the watchdog framework
+Linux Virtualization Support
+KVM
+User Mode Linux HOWTO
+Paravirt_ops
+Guest halt polling
+The Linux Input Documentation
+Linux Input Subsystem userspace API
+Linux Input Subsystem kernel API
+Driver-specific documentation
+Linux Hardware Monitoring
+The Linux Hardware Monitoring kernel API
+PMBus core driver and internal API
+Kernel driver inspur-ipsps1
+How to Get Your Patch Accepted Into the Hwmon Subsystem
+Naming and data format standards for sysfs files
+Userspace tools
+Hardware Monitoring Kernel Drivers
+Linux GPU Driver Developer’s Guide
+Introduction
+DRM Internals
+DRM Memory Management
+Kernel Mode Setting (KMS)
+Mode Setting Helper Functions
+Userland interfaces
+Kernel clients
+GPU Driver Documentation
+Backlight support
+VGA Switcheroo
+VGA Arbiter
+TODO list
+Security Documentation
+Credentials in Linux
+IMA Template Management Mechanism
+Kernel Keys
+Linux Security Modules: General Security Hooks for Linux
+Linux Security Module Development
+Linux Secure Attention Key (SAK) handling
+SCTP
+Kernel Self-Protection
+SipHash - a short input PRF
+HalfSipHash - SipHash’s insecure younger cousin
+Trusted Platform Module documentation
+Digital Signature Verification API
+Linux Sound Subsystem Documentation
+ALSA Kernel API Documentation
+Designs and Implementations
+ALSA SoC Layer
+Advanced Linux Sound Architecture - Driver Configuration guide
+HD-Audio
+Card-Specific Information
+Linux Kernel Crypto API
+Kernel Crypto API Interface Specification
+Scatterlist Cryptographic API
+Kernel Crypto API Architecture
+Asynchronous Transfers/Transforms API
+Asymmetric / Public-key Cryptography Key Type
+Developing Cipher Algorithms
+User Space Interface
+Crypto Engine
+Programming Interface
+Code Examples
+Fast & Portable DES encryption & decryption
+Filesystems in the Linux kernel
+Core VFS documentation
+Filesystem support layers
+Filesystems
+Linux Memory Management Documentation
+User guides for MM features
+Kernel developers MM documentation
+BPF Documentation
+BPF Type Format (BTF)
+Frequently asked questions (FAQ)
+Helper functions
+Program types
+Map types
+Testing and debugging BPF
+Other
+USB support
+Linux ACM driver v0.16
+Authorizing (or not) your USB devices to connect to the system
+ChipIdea Highspeed Dual Role Controller Driver
+DWC3 driver
+EHCI driver
+How FunctionFS works
+Linux USB gadget configured through configfs
+Linux USB HID gadget driver
+Multifunction Composite Gadget
+Linux USB Printer Gadget Driver
+Linux Gadget Serial Driver v2.0
+Gadget Testing
+Infinity Usb Unlimited Readme
+Mass Storage Gadget (MSG)
+USB 7-Segment Numeric Display
+mtouchusb driver
+OHCI
+USB Raw Gadget
+USB/IP protocol
+usbmon
+USB serial
+USB references
+Linux CDC ACM inf
+Linux inf
+USB devfs drop permissions source
+Credits
+Linux PCI Bus Subsystem
+1. How To Write Linux PCI Drivers
+2. The PCI Express Port Bus Driver Guide HOWTO
+3. PCI Express I/O Virtualization Howto
+4. The MSI Driver Guide HOWTO
+5. ACPI considerations for PCI host bridges
+6. PCI Error Recovery
+7. The PCI Express Advanced Error Reporting Driver Guide HOWTO
+8. PCI Endpoint Framework
+9. Boot Interrupts
+Linux SCSI Subsystem
+The 53c700 Driver Notes
+AACRAID Driver for Linux (take two)
+AdvanSys Driver Notes
+Adaptec AHA-1520/1522 SCSI driver for Linux (aha152x)
+Adaptec Ultra320 Family Manager Set
+Adaptec Aic7xxx Fast -> Ultra160 Family Manager Set v7.0
+ARECA FIRMWARE SPEC
+Usage of IOP331 adapter
+RS-232 Interface for Areca Raid Controller
+Linux driver for Brocade FC/FCOE adapters
+Operating FCoE using bnx2fc
+BusLogic MultiMaster and FlashPoint SCSI Driver for Linux
+Chelsio S3 iSCSI Driver for Linux
+README file for the dc395x SCSI driver
+Adaptec dpti driver
+The BusLogic FlashPoint SCSI Driver
+README file for the Linux g_NCR5380 driver
+HPSA - Hewlett Packard Smart Array driver
+Highpoint RocketRAID 3xxx/4xxx Adapter Driver (hptiop)
+SAS Layer
+Link Power Managent Policy
+LPFC Driver Release Notes
+Notes on Management Module
+The Linux NCR53C8XX/SYM53C8XX drivers README file
+WorkBiT NinjaSCSI-3/32Bi driver for Linux
+Terse where to get ZIP Drive help info
+Qlogic FASXXX Family Driver Notes
+README for the SCSI media changer driver
+SCSI EH
+SCSI FC Tansport
+Notes on Linux SCSI Generic (sg) driver
+SCSI mid_level - lower_level driver interface
+SCSI Kernel Parameters
+SCSI subsystem documentation
+Linux SCSI Disk Driver (sd) Parameters
+SMARTPQI - Microsemi Smart PQI Driver
+The SCSI Tape Driver
+The sym53c500_cs Driver
+The Linux SYM-2 driver documentation file
+tcm_qla2xxx Driver Notes
+Universal Flash Storage
+Driver for Western Digital WD7193, WD7197 and WD7296 SCSI cards
+SCSI RDMA (SRP) transport class diagram
+Assorted Miscellaneous Devices Documentation
+AD525x Digital Potentiometers
+Kernel driver apds990x
+Kernel driver bh1770glc
+Kernel driver eeprom
+C2 port support
+IBM Virtual Management Channel Kernel Driver (IBMVMC)
+Kernel driver ics932s401
+Kernel driver isl29003
+Kernel driver lis3lv02d
+Kernel driver max6875
+Intel Many Integrated Core (MIC) architecture
+Driver for PCI Endpoint Test Function
+Spear PCIe Gadget Driver
+Introduction of Uacce
+Architecture
+How does it work
+The Uacce register API
+The user driver
+Xilinx SD-FEC Driver
+Linux Scheduler
+Completions - “wait for completion” barrier APIs
+CPU Scheduler implementation hints for architecture specific code
+CFS Bandwidth Control
+Deadline Task Scheduling
+CFS Scheduler
+Scheduler Domains
+Capacity Aware Scheduling
+Energy Aware Scheduling
+Scheduler Nice Design
+Real-Time group scheduling
+Scheduler Statistics
+Scheduler pelt c program
+MHI
+MHI (Modem Host Interface)
+MHI Topology
+Architecture-agnostic documentation
+Assembler Annotations
+Rationale
+Caveat and Discussion
+Macros Description
+Architecture-specific documentation
+These books provide programming details about architecture-specific implementation.
+
+ARM Architecture
+ARM Linux 2.6 and upper
+Booting ARM Linux
+Cluster-wide Power-up/power-down race avoidance algorithm
+Interface for registering and calling firmware-specific operations for ARM
+Interrupts
+Kernel mode NEON
+Kernel-provided User Helpers
+Kernel Memory Layout on ARM Linux
+Memory alignment
+ARM TCM (Tightly-Coupled Memory) handling in Linux
+Kernel initialisation parameters on ARM Linux
+Software emulation of deprecated SWP instruction (CONFIG_SWP_EMULATE)
+The Unified Extensible Firmware Interface (UEFI)
+vlocks for Bare-Metal Mutual Exclusion
+Porting
+SoC-specific documents
+ARM64 Architecture
+ACPI Tables
+Activity Monitors Unit (AMU) extension in AArch64 Linux
+ACPI on ARMv8 Servers
+Booting AArch64 Linux
+ARM64 CPU Feature Registers
+ARM64 ELF hwcaps
+HugeTLBpage on ARM64
+Legacy instructions
+Memory Layout on AArch64 Linux
+Perf Event Attributes
+Pointer authentication in AArch64 Linux
+Silicon Errata and Software Workarounds
+Scalable Vector Extension support for AArch64 Linux
+AArch64 TAGGED ADDRESS ABI
+Tagged virtual addresses in AArch64 Linux
+IA-64 Architecture
+Linux kernel release for the IA-64 Platform
+Memory Attribute Aliasing on IA-64
+EFI Real Time Clock driver
+IPF Machine Check (MC) error inject tool
+Light-weight System Calls for IA-64
+IRQ affinity on IA64 platforms
+An ad-hoc collection of notes on IA64 MCA and INIT processing
+Serial Devices
+Recipe for getting/building/running Xen/ia64 with pv_ops
+m68k Architecture
+Command Line Options for Linux/m68k
+Amiga Buddha and Catweasel IDE Driver
+MIPS-specific Documentation
+1. Ingenic JZ47xx SoCs Timer/Counter Unit hardware
+Linux on the Nios II architecture
+What is Nios II?
+Nios II ABI
+OpenRISC Architecture
+OpenRISC Linux
+TODO
+PA-RISC Architecture
+PA-RISC Debugging
+Register Usage for Linux/PA-RISC
+powerpc
+The PowerPC boot wrapper
+CPU Families
+CPU Features
+Coherent Accelerator Interface (CXL)
+Coherent Accelerator (CXL) Flash
+DAWR issues on POWER9
+DSCR (Data Stream Control Register)
+PCI Bus EEH Error Recovery
+ELF Note PowerPC Namespace
+Firmware-Assisted Dump
+HVCS IBM “Hypervisor Virtual Console Server” Installation Guide
+IMC (In-Memory Collection Counters)
+CPU to ISA Version Mapping
+KASLR for Freescale BookE32
+Linux 2.6.x on MPC52xx family
+Hypercall Op-codes (hcalls)
+PCI Express I/O Virtualization Resource on Powerenv
+PMU Event Based Branches
+Ptrace
+Freescale QUICC Engine Firmware Uploading
+Power Architecture 64-bit Linux system call ABI
+Transactional Memory support
+Protected Execution Facility
+Virtual Accelerator Switchboard (VAS) userspace API
+VCPU Dispatch Statistics
+RISC-V architecture
+Boot image header in RISC-V Linux
+Supporting PMUs on RISC-V platforms
+arch/riscv maintenance guidelines for developers
+s390 Architecture
+Linux for S/390 and zSeries
+IBM 3270 Display System support
+S/390 driver model interfaces
+Linux API for read access to z/VM Monitor Records
+IBM s390 QDIO Ethernet Driver
+S390 Debug Feature
+Adjunct Processor (AP) facility
+vfio-ccw: the basic infrastructure
+The s390 SCSI dump tool (zfcpdump)
+S/390 common I/O-Layer
+S/390 PCI
+ibm 3270 changelog
+ibm 3270 config3270.sh
+SuperH Interfaces Guide
+Adding a new board to LinuxSH
+Notes on register bank usage in the kernel
+Memory Management
+Machine Specific Interfaces
+Busses
+Sparc Architecture
+Steps for sending ‘break’ on sunhv console
+Application Data Integrity (ADI)
+Oracle Data Analytics Accelerator (DAX)
+x86-specific Documentation
+1. The Linux/x86 Boot Protocol
+2. x86 Topology
+3. Kernel level exception handling
+4. Kernel Stacks
+5. Kernel Entries
+6. Early Printk
+7. ORC unwinder
+8. Zero Page
+9. The TLB
+10. MTRR (Memory Type Range Register) control
+11. PAT (Page Attribute Table)
+12. Linux IOMMU Support
+13. Intel(R) TXT Overview
+14. AMD Memory Encryption
+15. Page Table Isolation (PTI)
+16. Microarchitectural Data Sampling (MDS) mitigation
+17. The Linux Microcode Loader
+18. User Interface for Resource Control feature
+19. TSX Async Abort (TAA) mitigation
+20. USB Legacy support
+21. i386 Support
+22. x86_64 Support
+Xtensa Architecture
+Atomic Operation Control (ATOMCTL) Register
+Passing boot parameters to the kernel
+MMUv3 initialization sequence
+Filesystem Documentation
+The documentation in this section are provided by specific filesystem subprojects.
+
+ext4 Data Structures and Algorithms
+1. About this Book
+2. High Level Design
+3. Global Structures
+4. Dynamic Structures
+Other documentation
+There are several unsorted documents that don’t seem to fit on other parts of the documentation body, or may require some adjustments and/or conversion to ReStructured Text format, or are simply too old.
+
+Unsorted Documentation
+brief tutorial on CRC computation
+LZO stream format as understood by Linux’s LZO decompressor
+Remote Processor Framework
+Remote Processor Messaging (rpmsg) Framework
+Speculation
+Mitigating speculation side-channels
+Static Keys
+TEE subsystem
+XZ data compression in Linux
+Atomic Types
+Atomic bitops
+Memory Barriers
+General notification mechanism
+Overview
+Message Structure
+Watch List (Notification Source) API
+Watch Queue (Notification Output) API
+Watch Subscription API
+Notification Posting API
+Watch Sources
+Event Filtering
+Userspace Code Example
+Translations
+Translations
+中文翻译
+Traduzione italiana
+한국어 번역
+Japanese translations
+Disclaimer
+Indices and tables
+Index
