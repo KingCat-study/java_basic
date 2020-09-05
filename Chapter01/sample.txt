@@ -1046,7 +1046,6 @@ Event Filtering
 Userspace Code Example
 Translations
 Translations
-中文翻译
 Traduzione italiana
 한국어 번역
 Japanese translations
