@@ -16,7 +16,7 @@ public class Code03 {
 	public static void main(String[] args) {
 		
 		try {
-			Scanner inputFile =  new Scanner(new File("data.txt"));
+			Scanner inputFile =  new Scanner(new File("input.txt"));
 			
 			members = new Person1[1000];
 			
