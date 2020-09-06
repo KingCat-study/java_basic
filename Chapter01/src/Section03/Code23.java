@@ -88,7 +88,7 @@ public class Code23 {
 				String str = inputFile.next();
 				String trimStr = trimming(str);
 				if(trimStr != null) {
-					addWord(str.toLowerCase());
+					addWord(trimStr.toLowerCase());
 				}
 				
 			}
