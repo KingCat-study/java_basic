@@ -6,10 +6,10 @@ class Polynomial은 하나의 다항식을 표현
 */
 public class Polynomial3 {
 	//다항의 이름은 한개의 캐릭터로 제한
-	public char name;
+	private char name;
 	//다항안에 포함되어 있는 총 갯수
-	public int nTerms;
-	public Term3[] terms;
+	private int nTerms;
+	private Term3[] terms;
 	
 	public Polynomial3() {
 		nTerms = 0;
@@ -45,7 +45,7 @@ public class Polynomial3 {
 		int index = findTerm(exp);
 		if(index != -1) {
 			// -5x^3 이 있고 add 로 +5x^3 이 들어 왔으면 0이 되므로 terms 에서 제거.
-			if((terms[index].coef + coef) == 0) {
+			if((terms[index].getCoef() + coef) == 0) {
 				for (int i = index; i < nTerms-1; i++) {
 					terms[i] = terms[i+1];
 				}
@@ -54,14 +54,14 @@ public class Polynomial3 {
 				nTerms--;
 				
 			} else {
-				terms[index].coef = terms[index].coef + coef;
+				terms[index].setCoef(terms[index].getCoef() + coef);
 			}
 		} else {
 			
 			int i = nTerms-1;
 			//내림차순
 			//오름 차순이면 부등호는 >
-			while(i >= 0 && terms[i].exp < exp) {
+			while(i >= 0 && terms[i].getExp() < exp) {
 				terms[i+1] = terms[i];
 				i--;
 			}
@@ -73,12 +73,36 @@ public class Polynomial3 {
 	
 	public int findTerm(int exp) {
 		//아래 방법 보다 더 좋은 방법은 이항검색
-		for (int i = 0; i < nTerms && terms[i].exp >= exp; i++) {
-			if(terms[i].exp == exp) {
+		for (int i = 0; i < nTerms && terms[i].getExp() >= exp; i++) {
+			if(terms[i].getExp() == exp) {
 				return i;
 			}
 		}
 		return -1;
+	}
+
+	public char getName() {
+		return name;
+	}
+
+	public void setName(char name) {
+		this.name = name;
+	}
+
+	public int getnTerms() {
+		return nTerms;
+	}
+
+	public void setnTerms(int nTerms) {
+		this.nTerms = nTerms;
+	}
+
+	public Term3[] getTerms() {
+		return terms;
+	}
+
+	public void setTerms(Term3[] terms) {
+		this.terms = terms;
 	}
 	
 }

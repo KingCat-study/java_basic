@@ -9,8 +9,8 @@ class Term은 다항식을 구성하는 하나의
 
 */
 public class Term3 {
-	public int coef;
-	public int exp;
+	private int coef;
+	private int exp;
 	
 	public Term3(int coef, int exp) {
 		this.coef = coef;
@@ -47,5 +47,21 @@ public class Term3 {
 		} else {
 			System.out.print(coef + "X^" + exp);	//  -x^2   ==> -1x^2
 		}
+	}
+
+	public int getCoef() { //accessor
+		return coef;
+	}
+
+	public void setCoef(int coef) { // mutator
+		this.coef = coef;
+	}
+
+	public int getExp() {
+		return exp;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
 	}
 }
