@@ -76,7 +76,7 @@ public class Code11 {
 	
 	private int find(char name) {
 		for (int i = 0; i < n; i++) {
-			if(polys[i].name == name) {
+			if(polys[i].getName() == name) {
 				return i;
 			}
 		}
