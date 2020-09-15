@@ -1,5 +1,6 @@
 package section05;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Scheduler {
@@ -9,7 +10,7 @@ public class Scheduler {
 //	int n = 0;
 	
 	MyArrayList<Event> eventList = new MyArrayList<>();
-	
+//	ArrayList<E>
 	private Scanner kb;
 	public void commandProcessor() {
 		kb = new Scanner(System.in);
@@ -37,7 +38,7 @@ public class Scheduler {
 			} else if(command.equals("show")) {
 				hadleShow();
 			} else if(command.equals("sort")) {
-//				Arrays.sort(eventList,0,eventList.size());
+				Arrays.sort(eventList.toArray());
 			}
 		}
 		
