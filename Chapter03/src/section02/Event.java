@@ -1,5 +1,7 @@
 package section02;
 
+import section04.MyDate;
+
 public class Event {
 	public String title;
 
