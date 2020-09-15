@@ -98,4 +98,8 @@ public class MyArrayList<T> {
 		
 		return returnVal;
 	}
+	
+    public Object[] toArray() {
+        return Arrays.copyOf(data, size);
+    }
 }
