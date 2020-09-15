@@ -16,4 +16,9 @@ public class OneDayEvent extends Event{
 	public String toString() {
 		return "OneDayEvent [title=" + title + ", date=" + date.toString() + "]";
 	}
+
+	@Override
+	public MyDate getRepresentativeDate() {
+		return date;
+	}
 }

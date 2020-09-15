@@ -1,5 +1,6 @@
 package section04;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Scheduler {
@@ -33,6 +34,8 @@ public class Scheduler {
 				
 			} else if(command.equals("show")) {
 				hadleShow();
+			} else if(command.equals("sort")) {
+				Arrays.sort(eventList,0,n);
 			}
 		}
 		

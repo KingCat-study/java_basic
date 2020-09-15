@@ -1,6 +1,6 @@
 package section04;
 
-public abstract class Event {
+public abstract class Event implements Comparable{
 	public String title;
 
 	public Event(String title) {
@@ -8,4 +8,11 @@ public abstract class Event {
 	}
 	
 	public abstract boolean isReleveant(MyDate date);
+	public abstract MyDate getRepresentativeDate();
+	
+	public int compareTo(Object other) {
+		MyDate myDate = getRepresentativeDate();
+		MyDate targetDate = ((Event)other).getRepresentativeDate();
+		return myDate.compareTo(targetDate);
+	}
 }

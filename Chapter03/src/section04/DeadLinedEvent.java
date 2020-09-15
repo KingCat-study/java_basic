@@ -16,5 +16,9 @@ public class DeadLinedEvent  extends Event{
 	public String toString() {
 		return "DeadLinedEvent [title=" + title + ", deadLine=" + deadLine.toString() + "]";
 	}
-	
+
+	@Override
+	public MyDate getRepresentativeDate() {
+		return deadLine;
+	}
 }
