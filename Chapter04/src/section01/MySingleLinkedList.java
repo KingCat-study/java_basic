@@ -28,6 +28,22 @@ public class MySingleLinkedList<T> {
 	
 	public void addBefore(Node<T> after, T item) {
 		Node<T> tmp =  new Node<T>(item); //T : type parameter
+		
+		tmp.next = after;
+		
+		int index = indexOf(after.data);
+		
+		if(index < 0) {
+			throw new ArrayIndexOutOfBoundsException(index);
+		} else if(index == 0){
+			addFirst(item);
+		} else {
+			index = index - 1; 
+			Node<T> before = getNode(index);
+			
+			before.next = tmp;
+			size++;
+		}
 	}
 	
 	//노드 생성 후 추가
