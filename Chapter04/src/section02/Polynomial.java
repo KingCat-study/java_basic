@@ -22,7 +22,7 @@ public class Polynomial {
 		Node<Term> p = terms.head;
 		Node<Term> q = null;
 		
-		while(p != null & p.data.expo <= expo) {
+		while(p != null && p.data.expo > expo) {
 			q = p;
 			p = p.next;
 		}

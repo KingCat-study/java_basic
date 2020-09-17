@@ -13,7 +13,7 @@ public class MyPolyNomialApp {
 		
 		while(true)
 		{
-			System.out.println("$ ");
+			System.out.print("$ ");
 			
 			String cmd = kb.next();
 			
